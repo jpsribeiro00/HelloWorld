@@ -15,16 +15,16 @@ import java.io.Serializable;
  * @author viter
  */
 public class MessageBean implements Serializable {
-     
+
     private String msg;
-        
+
     public MessageBean() {
     }
-    
+
     public String getMsg() {
         return msg;
     }
-    
+
     public void setMsg(String value) {
         switch (value){
             case "":
@@ -39,6 +39,12 @@ public class MessageBean implements Serializable {
                 break;
             case "fr":
                 msg = "Bonjour";
+                break;
+            case "es":
+                msg = "Hola";
+                break;
+            case "jp":
+                msg = "Konichiwa";
                 break;
         }
     }
